@@ -3,6 +3,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebaseConfig';
 import "../Styles/LoginScreenStyle.css";
 import { useNavigate, Link } from "react-router-dom";
+import myImage from '../assets/images/logo.png';
+
 
 
 function LoginScreen() {
@@ -30,12 +32,12 @@ function LoginScreen() {
         <div className="LeftContainer">
           <div className="LeftContent">
             <div className="ImageContainer">
-              {/* Yaha image add krna hai  */}
+              <img src={myImage} alt="Logo" />
             </div>
             <div>
               <p className="LeftContentTextHeading">
-                AI CityGuard - city <br />
-                Surveillance Solution.
+                CityZen - Smart <br />
+                City Surveillance Solution.
               </p>
               <p className="LeftContentTextHeadingSub">
                 Real-time incident monitoring and alerts.

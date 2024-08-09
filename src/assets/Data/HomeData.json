@@ -1,0 +1,28 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "Item 1",
+        "subtitle": "Subtitle for item 1",
+        "image": "https://via.placeholder.com/100"
+      },
+      {
+        "id": 2,
+        "name": "Item 2",
+        "subtitle": "Subtitle for item 2",
+        "image": "https://via.placeholder.com/100"
+      },
+      {
+        "id": 3,
+        "name": "Item 3",
+        "subtitle": "Subtitle for item 3",
+        "image": "https://via.placeholder.com/100"
+      },
+      {
+        "id": 4,
+        "name": "Item 4",
+        "subtitle": "Subtitle for item 4",
+        "image": "https://via.placeholder.com/100"
+      }
+    ]
+  }

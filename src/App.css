@@ -1,7 +1,31 @@
+* { box-sizing: border-box; }
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
 
 body {
-    background-color:whitesmoke;
+	position: relative;
+	background-color: #fbfff9;
+	-webkit-font-smoothing: antialiased;
+	color: #FFF;
+	overflow-x: hidden;
+}
+
+App-body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
   }
   
+  /* App.css */
+
+.hidden {
+  display: none;
+}
+
+/* Add other styles for your app here */

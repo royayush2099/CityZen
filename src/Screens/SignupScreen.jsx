@@ -3,6 +3,8 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebaseConfig';
 import "../Styles/SignupScreenStyle.css";
 import { useNavigate, Link } from "react-router-dom";
+import myImage from '../assets/images/logo.png';
+
 
 function SignupScreen() {
   const [email, setEmail] = useState("");
@@ -35,12 +37,12 @@ function SignupScreen() {
         <div className="LeftContainer">
           <div className="LeftContent">
             <div className="ImageContainer">
-              {/* Add image here */}
+              <img src={myImage} alt="Logo" />
             </div>
             <div>
               <p className="LeftContentTextHeading">
-                AI CityGuard - city <br />
-                Surveillance Solution.
+                CityZen - Smart <br />
+                City Surveillance Solution.
               </p>
               <p className="LeftContentTextHeadingSub">
                 Real-time incident monitoring and alerts.
