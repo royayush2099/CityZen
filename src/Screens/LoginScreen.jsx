@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebaseConfig';
 import "../Styles/LoginScreenStyle.css";
 import { useNavigate, Link } from "react-router-dom";
-import SignupScreen from "./SignupScreen";
+
 
 function LoginScreen() {
 
@@ -13,7 +13,7 @@ function LoginScreen() {
 
   const navigate = useNavigate();
 
-  const handleLogin = async (event: React.FormEvent) => {
+  const handleLogin = async (event) => {
     event.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
@@ -23,7 +23,6 @@ function LoginScreen() {
       setError("Failed to log in. Please check your credentials.");
     }
   };
-
 
   return (
     <>

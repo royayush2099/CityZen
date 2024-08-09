@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebaseConfig';
 import "../Styles/SignupScreenStyle.css";
-import { useNavigate ,Link } from "react-router-dom";
-import LoginScreen from "./LoginScreen";
+import { useNavigate, Link } from "react-router-dom";
 
 function SignupScreen() {
   const [email, setEmail] = useState("");
@@ -13,7 +12,7 @@ function SignupScreen() {
 
   const navigate = useNavigate();
 
-  const handleSignup = async (event: React.FormEvent) => {
+  const handleSignup = async (event) => {
     event.preventDefault();
 
     if (password !== confirmPassword) {
@@ -90,8 +89,8 @@ function SignupScreen() {
             </form>
             {error && <p className="error-message">{error}</p>}
 
-            <Link to="/" className="Login" >
-            Already have an account? Log in
+            <Link to="/" className="Login">
+              Already have an account? Log in
             </Link>
           </div>
         </div>
