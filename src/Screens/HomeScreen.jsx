@@ -15,8 +15,8 @@ function HomeScreen() {
       <nav className="navbar">
         <h2>Navbar</h2>
         <ul>
-          <li><a href="#">Nav Item 1</a></li>
-          <li><a href="#">Nav Item 2</a></li>
+          <li><a href="#">Opt</a></li>
+          <li><a href="#">Opt</a></li>
           {/* Add more nav items here */}
         </ul>
       </nav>
