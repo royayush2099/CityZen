@@ -1,28 +1,30 @@
+
+
 {
     "items": [
       {
         "id": 1,
-        "name": "Item 1",
+        "name": "Accident Detect",
         "subtitle": "Subtitle for item 1",
-        "image": "https://via.placeholder.com/100"
+        "image": "/images/Accident.jpeg"
       },
       {
         "id": 2,
-        "name": "Item 2",
+        "name": "INfrastructure",
         "subtitle": "Subtitle for item 2",
-        "image": "https://via.placeholder.com/100"
+        "image": "/images/Infra.jpeg"
       },
       {
         "id": 3,
-        "name": "Item 3",
+        "name": "Crime ",
         "subtitle": "Subtitle for item 3",
-        "image": "https://via.placeholder.com/100"
+        "image": "/images/Crime.jpeg"
       },
       {
         "id": 4,
-        "name": "Item 4",
+        "name": "Traffic flow",
         "subtitle": "Subtitle for item 4",
-        "image": "https://via.placeholder.com/100"
+        "image": "/images/Traffic.jpeg"
       }
     ]
   }

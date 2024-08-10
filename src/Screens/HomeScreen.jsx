@@ -23,7 +23,7 @@ function HomeScreen() {
       <div className="content-container">
         {data.items.map((item) => (
           <div key={item.id} className="content-item">
-            <img src={item.image} alt={item.name} />
+            <img src={item.image} alt={item.name} width={'150'} height={'100'} />
             <div className="item-text">
               <h3>{item.name}</h3>
               <p>{item.subtitle}</p>
@@ -31,6 +31,12 @@ function HomeScreen() {
             </div>
           </div>
         ))}
+      </div>
+      
+      {/* Profile Section */}
+      <div className="profile-section">
+        <img src="/path/to/your/avatar.jpg" alt="Profile Avatar" className="profile-avatar" />
+        <div className="profile-name">Your Name</div>
       </div>
     </div>
   );
