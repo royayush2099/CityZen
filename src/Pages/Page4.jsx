@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page4() {
   return (
-    <div>Page4</div>
+    <h1>nxjsn</h1>
   )
 }
 

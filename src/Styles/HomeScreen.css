@@ -19,7 +19,8 @@
   position: fixed; /* Fixes the navbar to the left */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items:flex-start;
+  justify-content: space-between;
 }
 
 .navbar h2 {
@@ -36,7 +37,8 @@
 }
 
 .navbar ul li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .navbar ul li a {
@@ -44,10 +46,17 @@
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+  padding: 5px 15px;
 }
 
+.navbar ul li:hover {
+  color: #000000;
+  background-color: #666;
+  border-radius: 12px;
+
+}
 .navbar ul li a:hover {
-  color: #0056b3;
+  color: #000000;
 }
 
 .content-container {

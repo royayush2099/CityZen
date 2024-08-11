@@ -6,25 +6,25 @@
         "id": 1,
         "name": "Accident Detect",
         "subtitle": "Our AI-powered Accident Detection System instantly identifies traffic collisions using real-time video analysis, enabling rapid emergency response and enhancing urban safety through immediate alerts.",
-        "image": "../images/Accident.jpeg"
+        "image": "/image/Accident.jpeg"
       },
       {
         "id": 2,
         "name": "Infrastructure",
         "subtitle": "Our AI-driven Infrastructure Management System monitors road conditions in real-time, detecting issues like potholes and hazards, and notifying maintenance teams for immediate action.",
-        "image": "../images/Infra.jpeg"
+        "image": "/image/Infra.jpeg"
       },
       {
         "id": 3,
         "name": "Crime ",
         "subtitle": "Our Crime Detection System uses AI to analyze live video feeds, identifying suspicious activities and alerting law enforcement instantly, enhancing urban security and crime prevention.",
-        "image": "../images/Crime.jpeg"
+        "image": "/image/Crime.jpeg"
       },
       {
         "id": 4,
         "name": "Traffic flow",
         "subtitle": "The AI-based Traffic Control System optimizes urban traffic flow by analyzing real-time data, detecting congestion, and adjusting signals to improve road efficiency and reduce delays.",
-        "image": "../images/Traffic.jpeg"
+        "image": "/image/Traffic.jpeg"
       }
     ]
   }
