@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebaseConfig';
 import "../Styles/SignupScreenStyle.css";
 import { useNavigate, Link } from "react-router-dom";
-import myImage from '../assets/images/logo.png';
+// import myImage from '../assets/images/logo.png';
 
 
 function SignupScreen() {
@@ -37,7 +37,7 @@ function SignupScreen() {
         <div className="LeftContainer">
           <div className="LeftContent">
             <div className="ImageContainer">
-              <img src={myImage} alt="Logo" />
+              <img src="/image/logo.png" alt="Logo" />
             </div>
             <div>
               <p className="LeftContentTextHeading">

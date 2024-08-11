@@ -24,6 +24,7 @@
   .logo-container {
     font-size: 100px;
     line-height: 1.9;
+    color: antiquewhite;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     animation: scaleUpDown 2s ease-in-out infinite;
   }
