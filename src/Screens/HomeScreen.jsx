@@ -19,24 +19,23 @@ function HomeScreen() {
           <li><a href="#">Opt</a></li>
           {/* Add more nav items here */}
         </ul>
+        {/* Profile Section */}
+        <div className="profile-section">
+          <img src="/path/to/your/avatar.jpg" alt="Profile Avatar" className="profile-avatar" />
+          <div className="profile-name">Your Name</div>
+        </div>
       </nav>
       <div className="content-container">
         {data.items.map((item) => (
           <div key={item.id} className="content-item">
-            <img src={item.image} alt={item.name} width={'150'} height={'100'} />
+            <img src={item.image} alt={item.name} />
             <div className="item-text">
               <h3>{item.name}</h3>
               <p>{item.subtitle}</p>
-              <button onClick={() => handleNavigation(`/page${item.id}`)}>Go to Page {item.name}</button>
+              <button onClick={() => handleNavigation(`/page${item.id}`)}>Step Inside to Explore</button>
             </div>
           </div>
         ))}
-      </div>
-      
-      {/* Profile Section */}
-      <div className="profile-section">
-        <img src="/path/to/your/avatar.jpg" alt="Profile Avatar" className="profile-avatar" />
-        <div className="profile-name">Your Name</div>
       </div>
     </div>
   );
