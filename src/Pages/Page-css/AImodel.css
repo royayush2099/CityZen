@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.content-container {
+  width: 100vw; /* Adjust width based on navbar */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for the element layout */
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.content-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-item:hover {
+  transform: translateY(-5px) scale(1.05); /* Slight 3D lift and scale on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item-text {
+  text-align: center;
+  /* margin-top: 15px; */
+}
+
+.item-text h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.item-text p {
+  font-size: 1rem;
+  color: #666;
+}
+
+button {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: black;
+  transform: translateY(-2px);
+}
+
+/* Additional styles for 3D effects and minimalist design */
+.content-item img {
+  width: 150px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.301); /* Soft shadow for images */
+  transition: transform 0.3s;
+}
+
+.content-item img:hover {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+}
