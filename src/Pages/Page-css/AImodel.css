@@ -8,21 +8,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 24px;
+  text-decoration: underline;
 }
 
 .title h1 {
-  font-size: 44px;
+  font-size: 2rem; /* Adjust font size for responsiveness */
   font-weight: 600;
   line-height: 1;
 }
 
 .content-container {
-  width: 100vw; /* Adjust width based on navbar */
+  width: 90%; /* Make container responsive */
+  max-width: 1200px; /* Set a maximum width */
+  margin: 20px auto; /* Center the container */
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns for the element layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
   gap: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -34,7 +37,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Use column for better mobile layout */
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -51,7 +54,7 @@ body {
 }
 
 .item-text h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem; /* Adjust font size for responsiveness */
   font-weight: 700;
   line-height: 1.2;
   color: #000000;
@@ -59,7 +62,7 @@ body {
 }
 
 .item-text p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Adjust font size for responsiveness */
   color: #666;
 }
 
@@ -83,7 +86,8 @@ button:hover {
 
 /* Additional styles for 3D effects and minimalist design */
 .content-item img {
-  width: 150px;
+  width: 100%; /* Make images responsive */
+  max-width: 200px; /* Set a maximum width for images */
   height: auto;
   border-radius: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.301); /* Soft shadow for images */
@@ -92,4 +96,14 @@ button:hover {
 
 .content-item img:hover {
   transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .content-item {
+    flex-direction: column; /* Column layout for mobile */
+  }
 }

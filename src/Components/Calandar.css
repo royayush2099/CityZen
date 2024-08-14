@@ -1,0 +1,75 @@
+/* General styles for the entire calendar */
+.react-calendar {
+    width: 100%;
+    max-width: 350px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling the date cells */
+  .react-calendar__tile {
+    font-size: 16px; /* Change the font size */
+    color: #000000; /* Change the text color */
+    padding: 6px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Styling for the selected date */
+  .react-calendar__tile--active {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
+  /* Hover effect on date cells */
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
+  /* Styling for weekdays (e.g., Mon, Tue) */
+  .react-calendar__month-view__weekdays__weekday {
+    font-size: 16px; /* Adjust size of the weekday labels */
+    color: #000000; /* Color for weekday labels */
+    padding-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  /* Styling for navigation buttons (e.g., next/prev month) */
+  .react-calendar__navigation button {
+    color: #000000;
+    min-width: 44px;
+    background: none;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+  
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #e0e0e0;
+    border-radius: 6px;
+  }
+  
+  /* Highlight today's date */
+  .react-calendar__tile--now {
+    background-color: #494e4d; /* Background color for today */
+    color: white; /* Text color for today */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 50%; /* Make the tile circular */
+  }
+  
+  /* Optional: Change the appearance on hover */
+  .react-calendar__tile--now:hover,
+  .react-calendar__tile--now:focus {
+    background-color: #1d7692; /* Slightly different color on hover */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .hide-date {
+    color: transparent;
+    background-color: transparent;
+    pointer-events: none; /* Prevent interaction */
+  }
+  

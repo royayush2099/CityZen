@@ -18,13 +18,16 @@ function DropdownMenu() {
                 <img src="/image/add.png" alt="Menu" className={`menu-image ${isOpen ? 'rotated' : ''}`} />
             </div>
             {isOpen && (
-                <div className="dropdown-menu">
-                    <ul>
-                        <li><a href="home">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="model">AI Models</a></li>
-                        <li><a href="#">Feedback</a></li>
-                    </ul>
+                <div className="dropdown-container">
+                    <div className="overlay" onClick={toggleMenu} />
+                    <div className="dropdown-menu">
+                        <ul>
+                            <li><a href="home">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="model">AI Models</a></li>
+                            <li><a href="feedback">Feedback</a></li>
+                        </ul>
+                    </div>
                 </div>
             )}
         </div>

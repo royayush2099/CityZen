@@ -30,19 +30,8 @@ function LoginScreen() {
     <>
       <div className="MainContainer">
         <div className="LeftContainer">
-          <div className="LeftContent">
-            <div className="ImageContainer">
-              <img src="/image/logo.png" alt="Logo" />
-            </div>
-            <div>
-              <p className="LeftContentTextHeading">
-                CityZen - Smart <br />
-                City Surveillance Solution.
-              </p>
-              <p className="LeftContentTextHeadingSub">
-                Real-time incident monitoring and alerts.
-              </p>
-            </div>
+          <div className="ImageContainer">
+            <img src="/image/app-bg.jpg" alt="bg-image" />
           </div>
         </div>
 

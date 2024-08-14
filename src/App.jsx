@@ -7,6 +7,7 @@ import SignupScreen from "./Screens/SignupScreen";
 import HomeScreen from "./Screens/HomeScreen";
 import LoadingScreen from './Screens/LoadingScreen'; // Import the LoadingScreen component
 import AImodel from './Pages/AImodel';
+import Feedback from './Pages/Feedback';
 import Page1 from './Pages/Page1';
 import Page2 from './Pages/Page2';
 import Page3 from './Pages/Page3';
@@ -36,6 +37,8 @@ function App() {
             <Route path="/page3" element={<Page3/>}/>
             <Route path="/page4" element={<Page4/>}/>
             <Route path="/model" element={<AImodel/>}/>
+            <Route path="/feedback" element={<Feedback/>}/>
+
           </Routes>
         </Router>
       </div>

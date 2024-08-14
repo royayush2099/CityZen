@@ -32,4 +32,4 @@ function AImodel() {
     )
 }
 
-export default AImodel
+export default AImodel;
