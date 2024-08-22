@@ -1,0 +1,17 @@
+{
+    "alerts": [
+      "Alert : Something happened!",
+      "Alert : Another important message.",
+      "Alert : Check out this warning!",
+      "Alert : System update available.",
+      "Alert : New feature added!",
+      "Alert : Don't miss this notification.",
+      "Alert : Security alert!",
+      "Alert : Maintenance scheduled.",
+      "Alert : Service disruption.",
+      "Alert : Action required.",
+      "Alert : Urgent update.",
+      "Alert : Important notice."
+    ]
+  }
+  

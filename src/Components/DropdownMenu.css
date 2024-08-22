@@ -9,7 +9,8 @@ body {
   align-items: center;
   padding: 8px 40px 0 40px;
   margin: 0 12px 0 12px ;
-  background-color: transparent;
+  background-color: #e7dddddd;
+  border-radius: 12px;
   color: rgb(0, 0, 0);
   position: relative;
   height: 10vh;
