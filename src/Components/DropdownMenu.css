@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px 0 40px;
+  margin: 0 12px 0 12px ;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  position: relative;
+  height: 10vh;
+  border-bottom: 3px solid black;
+}
+
+.logo img {
+  padding: 0;
+  width: 96px;
+  height: auto;
+  scale: 1.1;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-image {
+  width: 44px; /* Adjust the width according to your image size */
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+.rotated {
+  transform: rotate(45deg);
+}
+
+.dropdown-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+.dropdown-menu {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  /* border-radius: 10px; */
+  margin: 0 12px 0 12px;
+  z-index: 2;
+  margin-top: 10vh;
+  height: 90vh;
+  width: 100vw;
+}
+
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.dropdown-menu li {
+  font-size: 30px;
+  /* text-decoration: none; */
+  margin: 20px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  font-size: 98px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: white;
+}
+
+.dropdown-menu li a:hover {
+  color: #0b499a90;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 10vh;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .menu-icon {
+    margin-bottom: 10px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    margin-top: 10vh;
+    height: 90vh;
+  }
+
+  .dropdown-menu li {
+    font-size: 18px;
+  }
+
+  .dropdown-menu li a {
+    font-size: 36px;
+  }
+}
