@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './MovingAlerts.css';
-import alertsData from './alert.json'; // Importing the JSON file
+import alertsData from './Alert.json'; // Importing the JSON file
 
 const MovingAlerts = () => {
   const [position, setPosition] = useState(0);
