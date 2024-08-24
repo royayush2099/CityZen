@@ -1,0 +1,30 @@
+.alert-container {
+    height: 300px; /* Height of the container */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: transparent; /* Light background color */
+    border: 2px solid #000000ce; /* Light border */
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alert-content {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+    top: 0;
+    left: 0;
+  }
+  
+  .alert {
+    margin: 0;
+    padding: 10px;
+    color: #ff0000; /* Alert text color */
+    border-radius: 4px;
+    margin-bottom: 5px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    height: 44px; /* Adjust this height as needed */
+  }
+  

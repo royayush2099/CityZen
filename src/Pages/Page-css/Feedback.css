@@ -1,0 +1,150 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100vh;
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .FeedbackForm-body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/image/app-bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Feedback Form Styles */
+  
+  .FeedbackForm {
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter:  blur(18px);
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .FeedbackForm h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+  }
+  
+  .FeedbackForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .FeedbackForm label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .FeedbackForm input[type="text"],
+  .FeedbackForm input[type="email"],
+  .FeedbackForm input[type="tel"],
+  .FeedbackForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .FeedbackForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .FeedbackForm button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .FeedbackForm button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive Styles */
+  
+  @media only screen and (max-width: 768px) {
+    .FeedbackForm {
+      margin: 20px auto;
+      padding: 10px;
+    }
+    .FeedbackForm h1 {
+      font-size: 18px;
+    }
+    .FeedbackForm label {
+      margin-bottom: 5px;
+    }
+    .FeedbackForm input[type="text"],
+    .FeedbackForm input[type="email"],
+    .FeedbackForm input[type="tel"],
+    .FeedbackForm textarea {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .FeedbackForm select {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .FeedbackForm button[type="submit"] {
+      padding: 5px 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .FeedbackForm {
+      margin: 10px auto;
+      padding: 5px;
+    }
+    .FeedbackForm h1 {
+      font-size: 14px;
+    }
+    .FeedbackForm label {
+      margin-bottom: 2px;
+    }
+    .FeedbackForm input[type="text"],
+    .FeedbackForm input[type="email"],
+    .FeedbackForm input[type="tel"],
+    .FeedbackForm textarea {
+      padding: 2px;
+      margin-bottom: 5px;
+    }
+    .FeedbackForm select {
+      padding: 2px;
+      margin-bottom: 5px;
+    }
+    .FeedbackForm button[type="submit"] {
+      padding: 2px 5px;
+    }
+  }
