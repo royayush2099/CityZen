@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import './Page-css/Page2.css'; // Import the CSS file
 
-function Page1() {
+function Page2() {
   const [videoSrc, setVideoSrc] = useState(null);
   const [alerts, setAlerts] = useState([]);
 
@@ -31,48 +32,38 @@ function Page1() {
 
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
+      {/* Sidebar/Navbar */}
+      <div className="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+          <li>
+            <button>Live Footage</button>
+          </li>
+          <li>
+            <button>Video Detection</button>
+          </li>
+        </ul>
+      </div>
+
       {/* Left side: Video feed */}
-      <div style={{ flex: 3, padding: '10px' }}>
-        <h2>Real-Time Potholes Detection:</h2>
+      <div className="video-container">
+        <h2>Real-Time Video Accident Detection:</h2>
         {videoSrc && (
           <img 
             src={videoSrc} 
             alt="video stream" 
-            style={{ 
-              width: '100%',  
-              height: '100%', 
-              objectFit: 'cover',
-              border: '1px solid black' 
-            }} 
           />
         )}
       </div>
-      
+
       {/* Right side: Alert history box */}
-      <div style={{ flex: 1, padding: '10px', maxHeight: '100vh', overflowY: 'auto' }}>
-        <div style={{
-          border: '1px solid black',
-          padding: '10px',
-          backgroundColor: '#f9f9f9',
-          borderRadius: '5px',
-          height: '100%'
-        }}>
+      <div className="alert-container">
+        <div className="alert-box">
           <h3>Alert History</h3>
-          <button 
-            onClick={clearHistory} 
-            style={{ 
-              padding: '5px 10px', 
-              marginBottom: '10px',
-              backgroundColor: '#ff4d4d',
-              color: 'white',
-              border: 'none',
-              borderRadius: '3px',
-              cursor: 'pointer'
-            }}
-          >
+          <button className="clear-button" onClick={clearHistory}>
             Clear History
           </button>
-          <ul>
+          <ul className="alert-list">
             {alerts.map((alert, index) => (
               <li key={index}>{alert}</li>
             ))}
@@ -83,4 +74,4 @@ function Page1() {
   );
 }
 
-export default Page1;
+export default Page2;
