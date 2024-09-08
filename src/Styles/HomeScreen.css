@@ -1,9 +1,9 @@
 .dashboard-container {
   margin: 0;
   min-height: 100vh;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(227, 224, 224, 0.498);
 }
 
 .dasb-content {
@@ -21,7 +21,7 @@
 .left-cont {
   height: 85vh;
   width: 15vw;
-  background-color: #e7dddddd; /* Clean white background */
+  background-color: #cfbebe88; /* Clean white background */
   box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   border-radius: 20px;
 }
@@ -105,7 +105,7 @@
   padding: 20px;
   box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   border-radius: 20px;
-  background-color: #e7dddddd;
+  background-color: #cfbebe88;
 }
 
 .user-message h2 {
@@ -131,7 +131,7 @@
   padding-top: 0px;
   box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   border-radius: 20px;
-  background-color: #e7dddddd;
+  background-color: #cfbebe88;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -159,11 +159,10 @@ width: 38%;
   height: 300px;
   margin-top: 50px;
   padding: 30px;
-  background: #fff;
+  background: #cfbebe88;
   border: 2px solid #000;
   border-radius: 12px;
   box-shadow: 5px 5px 0 #000;
-  transform: rotate(-2deg);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -173,7 +172,7 @@ width: 38%;
 }
 .complaint-sec .card:hover {
   transform: rotate(0deg) scale(1.02);
-  box-shadow: 10px 12px 0 #000;
+  box-shadow: 4px 6px 0 #000;
 }
 .complaint-sec .banner {
   position: absolute;
@@ -264,7 +263,7 @@ width: 38%;
   background: #fff;
   color: #000;
   transform: translateY(-5px);
-  box-shadow: 0 5px 0 #000;
+  box-shadow: 0 1px 0 #000;
 }
 .complaint-sec .sign-up:active {
   animation: shake 0.5s ease-in-out;
@@ -302,7 +301,7 @@ width: 38%;
 
 .model-card {
   width: 25%;
-  background-color: #e7dddddd;
+  /* background-color: #cfbebe88; */
   border-radius: 12px;
   height: 100%;
 }
@@ -318,7 +317,7 @@ width: 38%;
   justify-content: center;
   flex-direction: column;
   gap: 12px;
-  background: #fff;
+  background: #cfbebe88;
   border-radius: 20px;
 }
 
